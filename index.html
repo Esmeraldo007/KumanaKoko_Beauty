@@ -2,6 +2,7 @@
 <html lang="pt-br" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Esmeraldo</title>
     <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,17 +24,21 @@
                 <a href="#acessorios">Acessórios</a>
             </li>
             <li>
-                <a href="#oferta">Ofertas</a>
+                <a href="#ofertas">Ofertas</a>
             </li>
         </ul>
-        <div class="busca">
-            <i class="fa-solid fa-magnifying-glass"></i>
+        <form action="#" class="busca">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             <input type="text" class="pesquisa" placeholder="Buscar produtos...">
-        </div>
+        </form>
         <div class="icons">
             <i class="fa-regular fa-user"></i>
             <i class="fa-solid fa-heart"></i>
             <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
         </div>
     </nav>
     <header class="header">
@@ -41,9 +46,90 @@
             <aside>
                 <h1>Nova Coleção Primavera/Verão</h1>
                 <p>Descubra as últimas tendências em moda e maquiagem. Peças exclusivas que realçam sua beleza natural.</p>
-                <a href="#vercolecao">Ver Coleção</a>
+                <a href="vercolecao.html">Ver Coleção</a>
             </aside>
         </section>
     </header>
+    <main class="main">
+        <h2>Categorias Principais</h2>
+        <p>Explore nossa seleção cuidadosa de produtos</p>
+        <aside class="aside">
+            <section>
+                <img src="./img/img (1).jpeg" alt="">
+                <h4>Vestidos</h4>
+            </section>
+            <section>
+                <img src="./img/img (2).jpeg" alt="">
+                <h4>Maquiagem</h4>
+            </section>
+            <section>
+                <img src="./img/img (3).jpeg" alt="">
+                <h4>Blusas</h4>
+            </section>
+            <section>
+                <img src="./img/SoftwareLogo.jpg" alt="">
+                <h4>Acessórios</h4>
+            </section>
+        </aside>
+
+        <h2>Produtos em Destaque</h2>
+        <p>Os mais vendidos e favoritos das nossas clientes</p>
+        <article class="article">
+            <section>
+                <img src="./img/img (1).jpeg" alt="">
+                <h4>Vestido Floral</h4>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regularfa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>R$ 199,90</p>
+            </section>
+            <section>
+                <img src="./img/img (2).jpeg" alt="">
+                <h4>Paleta de Sombras</h4>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regularfa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>R$ 89,90</p>
+            </section>
+            <section>
+                <img src="./img/img (3).jpeg" alt="">
+                <h4>Blusa Casual</h4>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>R$ 79,90</p>
+            </section>
+            <section>
+                <img src="./img/SoftwareLogo.jpg" alt="">
+                <h4>Colar Elegante</h4>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>R$ 49,90</p>
+            </section>
+        </article>
+
+        <h2 id="roupas">Roupas</h2>
+        <h2 id="maquiagem">Maquiagem</h2>
+        <h2 id="acessorios">Acessórios</h2>
+        <h2 id="ofertas">Ofertas</h2>
+    </main>
   </body>
 </html>
+<script src="./script.js"></script>

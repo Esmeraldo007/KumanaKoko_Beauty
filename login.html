@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or SignUp</title>
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="login.css">
+</head>
+<!-- 
+Esmeraldo Manuel Kumana - Julieta KOKO
+Website de E-commerce de Moda e Maquiagem
+
+-->
+
+<body>
+    <header>
+        <img src="./img/logo.jpg" alt="">
+        
+    </header>
+    <main>
+        <section class="login">
+            <h2>Login</h2>
+            <form action="#" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Nome..." required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Palavra-passe..."   required>
+                
+                <button type="submit">Login</button>
+            </form>
+            <p>Criar uma conta <span onclick="goSignup()">SignUp</span></p>
+        </section>
+        <section class="signup">
+            <h2>Sign Up</h2>
+            <form action="#" method="post">
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="new-username" placeholder="Nome..."  required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="new-email" name="email" placeholder="E-mail..."  required>
+                
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" name="new-password" placeholder="Palavra-passe..."  required>
+                
+                <button type="submit">Sign Up</button>
+
+            </form>
+            <p>Tenho uma conta <span onclick="goLogin()">Login</span></p>
+            
+        </section>
+    </main>
+</body>
+</html>
+<script src="login.js"></script>
