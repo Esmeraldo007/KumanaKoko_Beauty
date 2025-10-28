@@ -1,6 +1,7 @@
 const heart = document.querySelector('.nav .icons .fa-heart');
 const toUser = document.querySelector('.nav .icons .fa-user');
-const toShopping = document.querySelector('.nav .icons .fa-cart-shopping');
+const toHome = document.querySelector('.nav .icons .fa-home');
+
 const menu = document.querySelector('.nav ul');
 const showmenu = document.querySelector('.nav .fa-bars');
 const hidemenu = document.querySelector('.nav .fa-xmark');
@@ -8,8 +9,8 @@ const hidemenu = document.querySelector('.nav .fa-xmark');
 heart.addEventListener('click', () => {
     heart.style.color = heart.style.color === 'rgb(241, 45, 104)' ? 'rgba(194, 201, 201, 1)' : 'rgb(241, 45, 104)';
 });
-toShopping.addEventListener('click', () => {
-    window.location.href = './loja.html';
+toHome.addEventListener('click', () => {
+    window.location.href = './index.html';
 });
 toUser.addEventListener('click', () => {
     window.location.href = './login.html';

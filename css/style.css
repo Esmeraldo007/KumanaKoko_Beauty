@@ -209,7 +209,7 @@ html{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .header a{
-    padding: 15px 20px;
+    padding: 10px 20px;
     background: rgb(241, 45, 104);
     color: white;
     border-radius: 12px;
@@ -315,6 +315,7 @@ main.main p{
     grid-gap: 17px;
     margin: 2rem auto 3.5rem;
     padding: 1rem;
+    transition: .20s transform;
 }
 .main .aside section{
     width: 300px;
@@ -325,6 +326,9 @@ main.main p{
     padding-bottom: .44rem;
     text-align: center;
     margin: 0 auto 1rem;
+}
+.main .aside section:hover{
+    transform: scale(1.1);
 }
 .main .aside section img{
     width: 100%;
@@ -356,6 +360,10 @@ main.main .article{
     align-items: start;
     justify-content: space-between;
     flex-direction: column;
+}
+
+.main .article section:hover{
+    transform: scale(1.1);
 }
 .main .article section img{
     width: 100%;
@@ -425,6 +433,12 @@ main.main .article{
     object-fit: cover;
     background: pink;
     border-radius: 5px;
+}
+.sell section img{
+    transition: .20s linear;
+}
+.sell section img:hover{
+    transform: rotateZ(360deg);
 }
 .sell section p{
     margin: .65rem auto 1.4rem;
@@ -496,15 +510,19 @@ footer.footer{
     background: rgb(196, 13, 43);
     color: rgb(255, 255, 255);
     text-decoration: none;
+    transition: .20s ease-in;
+}
+.footer aside a:hover{
+    background: rgb(75, 2, 14);
 }
 .footer article{
-    width: 100%;
+    width: 99%;
     padding: .55rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
+    display: flex;
     align-items: center;
-    margin: .74rem auto;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin: .74rem auto;
     grid-gap: 25px;
 }
 .footer article h5{
@@ -518,6 +536,12 @@ footer.footer{
     text-decoration: none;
     color: white;
     font-size: 1rem;
+    transition: .20s linear;
+}
+.footer article section a:hover{
+    background: rgb(241, 50, 79);
+    padding: .20rem;
+    border-radius: 5px;
 }
 .footer article section:first-child a{
     font-size: 1.2rem;
@@ -538,9 +562,9 @@ footer.footer{
 .footer form input{
     border: none;
     background: transparent;
-    color: white;
     padding: .7rem;
     width: 80%;
+    outline: none;
 }
 .footer form button{
     border: none;
@@ -555,6 +579,8 @@ footer.footer{
     padding: 5px;
     color: rgb(240, 230, 240);
     background: rgb(226, 22, 56);
+    outline: none;
+    cursor: pointer;
 }
 .footer img{
     width: 60px;
@@ -570,4 +596,18 @@ footer.footer{
     color: red;
     background: red;
     
+}
+section{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .6s ease;
+}
+p{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: .6s ease;
+}
+.show{
+    opacity: 1;
+    transform: translateY(0);
 }
