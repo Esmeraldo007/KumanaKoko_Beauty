@@ -18,12 +18,12 @@ const logionForm = document.querySelector('.login form');
 
 logionForm.addEventListener('submit', function(event){
     event.preventDefault();
+    const name = username.value;
+    const pass = password.value;
     if(!name || !pass){
         alert('Por favor, preencha todos os campos.');
         return;
     }
-    const name = username.value;
-    const pass = password.value;
 
     window.location.href = "index.html";
     alert('Nome: ' + name + '\nSenha: ' + pass);
@@ -38,13 +38,14 @@ const signupForm = document.querySelector('.signup form');
 
 signupForm.addEventListener('submit', function(event){
     event.preventDefault();
+    const name = newusername.value;
+    const pass = newpassword.value;
+    const email = newemail.value;
+    
     if(!name || !pass || !email){
         alert('Por favor, preencha todos os campos.');
         return;
     }
-    const name = newusername.value;
-    const pass = newpassword.value;
-    const email = newemail.value;
     window.location.href = "index.html";
     alert('Nome: ' + name + '\nSenha: ' + pass);
     newusername.value = '';
