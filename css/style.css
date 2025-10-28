@@ -458,14 +458,6 @@ main.main .article{
     border: 1px solid rgb(230, 89, 112);
     color: white;
 }
-footer.footer{
-    width: 100%;
-    background: pink;
-    padding: .55rem;
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-}
 @media (max-width: 530px){
     .sell{
         flex-direction: column;
@@ -479,4 +471,103 @@ footer.footer{
     .article-acessorios section:last-child{
         width: 99%;
     }
+}
+
+footer.footer{
+    width: 100%;
+    background: rgb(17, 11, 11);
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: white;
+    padding-bottom: 1.4rem;
+}
+.footer aside{
+    width: 100%;
+    background:   rgb(241, 50, 79);
+    padding: 20px 10px 35px;
+}
+.footer aside p{
+    margin: .77rem auto 1.6rem;
+}
+.footer aside a{
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(196, 13, 43);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.footer article{
+    width: 100%;
+    padding: .55rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    align-items: center;
+    margin: .74rem auto;
+    justify-content: space-around;
+    grid-gap: 25px;
+}
+.footer article h5{
+    font-size: 1rem;
+}
+.footer article section{
+    width: 200px;
+    text-align: left;
+}
+.footer article section a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.footer article section:first-child a{
+    font-size: 1.2rem;
+}
+.footer ul li{
+    list-style: none;
+    margin-top: .60em;
+}
+.footer form{
+    background: rgb(247, 235, 237);
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    height: 33px;
+    margin-top: .57rem;
+    align-items: center;
+}
+.footer form input{
+    border: none;
+    background: transparent;
+    color: white;
+    padding: .7rem;
+    width: 80%;
+}
+.footer form button{
+    border: none;
+    inset: all;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    width: 20%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: rgb(240, 230, 240);
+    background: rgb(226, 22, 56);
+}
+.footer img{
+    width: 60px;
+    border-radius: 50%;
+}
+.footer h6{
+    font-size: .87rem;
+    text-align: right;
+    margin-top: .44rem;
+    margin-right: 1rem;
+}
+.footer hr{
+    color: red;
+    background: red;
+    
 }
